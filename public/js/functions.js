@@ -27,7 +27,7 @@ slider.reloadSlider({
   });
   
  wow = new WOW({}).init();
-   
+ /*  
   //Google Map
   var get_latitude = $('#google-map').data('latitude');
   var get_longitude = $('#google-map').data('longitude');
@@ -46,7 +46,7 @@ slider.reloadSlider({
       });
   }
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
-  
+ */ 
 })(jQuery);
 
 

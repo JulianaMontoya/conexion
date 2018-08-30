@@ -4,6 +4,9 @@ const modeloMunicipio = require('./models/municipio');
 const modeloTurista = require('./models/turista');
 const modeloEventos = require('./models/eventos');
 const modeloSitio = require('./models/sitio');
+const modeloMensaje = require('./models/mensaje');
+const modeloLugares = require('./models/lugares')
+const modeloRegistro = require('./models/registro')
 
 const sequelize = new Sequelize('proyecto2', 'postgres', 'admin', {
     dialect: 'postgres',
@@ -14,8 +17,11 @@ var municipio = modeloMunicipio(sequelize, Sequelize);
 var turista = modeloTurista(sequelize, Sequelize);
 var sitio = modeloSitio(sequelize, Sequelize);
 var eventos = modeloEventos(sequelize, Sequelize);
+var mensaje = modeloMensaje(sequelize, Sequelize);
+var lugares = modeloLugares(sequelize, Sequelize);
+var registro = modeloRegistro(sequelize, Sequelize);
 
-const sitios_turista = sequelize.define('sitios_turista',  //nombre tabla
+var sitios_turista = sequelize.define('sitios_turista',  //nombre tabla
     {
         nombreEvento: { //Nueva llave primaria 
             type: Sequelize.INTEGER,
@@ -50,7 +56,7 @@ const sitios_turista = sequelize.define('sitios_turista',  //nombre tabla
     }
 
 );
-sequelize.sync({ force: false }) //sincronizacion de base de datos
+sequelize.sync({ force: true }) //sincronizacion de base de datos
     .then(() => {
         console.log('Database & tables created!')
     })
@@ -59,5 +65,8 @@ module.exports = {
     eventos,
     municipio,
     sitio,
-    turista
+    turista,
+    mensaje,
+    lugares,
+    registro
 }

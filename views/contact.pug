@@ -15,19 +15,12 @@ head
   link(rel='stylesheet' type='text/css' href='css/set1.css')
   link(href='css/overwrite.css' rel='stylesheet')
   link(href='css/style.css' rel='stylesheet')
-  //
-    =======================================================
-    Theme Name: eNno
-    Theme URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-    =======================================================
 nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
   .container
     // Brand and toggle get grouped for better mobile display
     .navbar-header
       button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='.navbar-collapse.collapse')
-        span.sr-only Toggle navigation
+        span.sr-only Toggle navigation 
         span.icon-bar
         span.icon-bar
         span.icon-bar
@@ -61,19 +54,19 @@ section#contact-page
         #errormessage
         form.contactForm(action='' method='post' role='form')
           .form-group
-            input#name.form-control(type='text' name='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars')
+            input#name.form-control(type='text' name='name' placeholder='Tu nombre' data-rule='minlen:4' data-msg='Please enter at least 4 chars')
             .validation
           .form-group
-            input#email.form-control(type='email' name='email' placeholder='Your Email' data-rule='email' data-msg='Please enter a valid email')
+            input#email.form-control(type='email' name='email' placeholder='Tu correo' data-rule='email' data-msg='Please enter a valid email')
             .validation
           .form-group
-            input#subject.form-control(type='text' name='subject' placeholder='Subject' data-rule='minlen:4' data-msg='Please enter at least 8 chars of subject')
+            input#subject.form-control(type='text' name='subject' placeholder='Tema' data-rule='minlen:4' data-msg='Please enter at least 8 chars of subject')
             .validation
           .form-group
-            textarea.form-control(name='message' rows='5' data-rule='required' data-msg='Please write something for us' placeholder='Message')
+            textarea.form-control(name='message' rows='5' data-rule='required' data-msg='Please write something for us' placeholder='Mensaje')
             .validation
           .text-center
-            button.btn.btn-primary.btn-lg(type='submit') Send Message
+            button.btn.btn-primary.btn-lg(type='submit') Enviar mensaje
     // /.row
   // /.container
 // /#contact-page

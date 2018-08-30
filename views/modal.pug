@@ -1,0 +1,48 @@
+link(rel='stylesheet', href='includes/css/bootstrap.min.css')
+link(href='includes/css/mdb.min.css')
+
+script(src='includes/js/jquery-3.3.1.min.js') 
+script(src='includes/js/bootstrap.min.js')
+//script(src='includes/js/mdb.min.js')
+
+script(src='js/index.js')
+
+
+// Modal
+#llamado.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+  .modal-dialog.form-dark(role='document')
+    // Content
+    .modal-content.card.card-image(style="background-image: url('');")
+      .py-5.px-5.z-depth-4
+        // Header
+        .modal-header.text-center.pb-4
+          h3.modal-title.w-100
+            strong Agregar Lugar Emblematico
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') x
+        // Body
+        .modal-body
+          // Body
+          .md-form.mb-5
+            label(for='nombre') nombre
+            input#nombre.form-control(type='text')
+          
+          .md-form.mb-5
+            label(for='imagen') imagen
+            input#imagen.form-control(type='text')
+            
+          .md-form.mb-5
+            label(for='descripcion') descripcion 
+            input#descripcion.form-control(type='text')
+            
+
+          // Grid row
+          .row.d-flex.align-items-center.mb-4
+            // Grid column
+            #agregarlugarEmblematico.text-center.col-xs-5.col-sm-5.col-md-5.col-lg-5
+              button.btn.btn-primary.btn-block.btn-rounded.z-depth-1(type='button') Agregar
+            // Grid column
+          // Grid row
+          // Grid row
+    // /.Content
+// Modal

@@ -23,12 +23,12 @@ body {
 
 a {
 	outline: none;
-	color: #3498db;
+	color: #aa1010;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #528cb3;
+	color: #aa1010;
 }
 
 section {
@@ -159,7 +159,7 @@ section {
 	display: inline-block;
 	margin: 20px 10px;
 	padding: 25px;
-	border: 1px solid #4f7f90;
+	border: 1px solid #aa1010;
 	text-align: center;
 }
 
